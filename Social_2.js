@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import SnackBar from "../components/SnackBar";
-
+import firebase from '../FirebaseConfig';
 export default function Social({ navigation }) {
     const [usersQuizes, setUsersQuizes] = useState({});
     const [users, setUsers] = useState([]);
