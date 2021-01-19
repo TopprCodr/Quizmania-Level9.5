@@ -109,17 +109,7 @@ export default function Social({ navigation }) {
                         :
                         users.map(function(item, idx) {
                             return (
-                                <SocialProfileItem
-                                    key={idx}
-                                    index={idx}
-                                    profilePicUri={item.profilePicUri}
-                                    name={item.name}
-                                    email={item.email}
-                                    desc={item.desc}
-                                    quizes={usersQuizes[item.userId]}
-                                    navigation={navigation}
-                                    onPress={handleProfileClick}
-                                />
+                               <Text> {item.name} : {item.email} : {item.desc}</Text>
                             )
                         })
                 }
